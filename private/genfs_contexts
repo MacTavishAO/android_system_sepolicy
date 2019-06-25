@@ -11,7 +11,6 @@ genfscon proc /device-tree/firmware/android u:object_r:proc_dt_firmware_android:
 genfscon proc /filesystems u:object_r:proc_filesystems:s0
 genfscon proc /interrupts u:object_r:proc_interrupts:s0
 genfscon proc /iomem u:object_r:proc_iomem:s0
-genfscon proc /last_kmsg u:object_r:proc_last_kmsg:s0
 genfscon proc /kmsg u:object_r:proc_kmsg:s0
 genfscon proc /loadavg u:object_r:proc_loadavg:s0
 genfscon proc /meminfo u:object_r:proc_meminfo:s0
@@ -24,7 +23,6 @@ genfscon proc /net/xt_qtaguid/ u:object_r:proc_qtaguid_stat:s0
 genfscon proc /cpu/alignment u:object_r:proc_cpu_alignment:s0
 genfscon proc /cpuinfo u:object_r:proc_cpuinfo:s0
 genfscon proc /pagetypeinfo u:object_r:proc_pagetypeinfo:s0
-genfscon proc /slabinfo u:object_r:proc_slabinfo:s0
 genfscon proc /softirqs u:object_r:proc_timer:s0
 genfscon proc /stat u:object_r:proc_stat:s0
 genfscon proc /swaps u:object_r:proc_swaps:s0
@@ -167,7 +165,6 @@ genfscon tracefs /events/regulator/                          u:object_r:debugfs_
 genfscon tracefs /events/pagecache/                          u:object_r:debugfs_tracing_debug:s0
 genfscon tracefs /events/irq/                                u:object_r:debugfs_tracing_debug:s0
 genfscon tracefs /events/ipi/                                u:object_r:debugfs_tracing_debug:s0
-genfscon tracefs /events/header_page                         u:object_r:debugfs_tracing:s0
 genfscon tracefs /events/f2fs/f2fs_sync_file_enter/          u:object_r:debugfs_tracing:s0
 genfscon tracefs /events/f2fs/f2fs_sync_file_exit/           u:object_r:debugfs_tracing:s0
 genfscon tracefs /events/f2fs/f2fs_write_begin/              u:object_r:debugfs_tracing:s0
@@ -237,12 +234,10 @@ genfscon debugfs /tracing/events/fence/                                         
 
 genfscon inotifyfs / u:object_r:inotify:s0
 genfscon vfat / u:object_r:vfat:s0
-genfscon exfat / u:object_r:exfat:s0
 genfscon debugfs / u:object_r:debugfs:s0
 genfscon fuse / u:object_r:fuse:s0
 genfscon configfs / u:object_r:configfs:s0
 genfscon sdcardfs / u:object_r:sdcardfs:s0
-genfscon esdfs / u:object_r:sdcardfs:s0
 genfscon pstore / u:object_r:pstorefs:s0
 genfscon functionfs / u:object_r:functionfs:s0
 genfscon usbfs / u:object_r:usbfs:s0
